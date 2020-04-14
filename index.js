@@ -18,7 +18,7 @@ async function getVariantURLs() {
   const url = "https://cfw-takehome.developers.workers.dev/api/variants";
   let response = await fetch(url);
   let json = await response.json();
-  var sites = json["variants"];
+  var sites = json.variants;
   return sites;
 }
 
